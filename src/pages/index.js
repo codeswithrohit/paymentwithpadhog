@@ -91,7 +91,7 @@ export default function Home({project}) {
           "orderId": oid, /* update order id */
           "token": txnToken, /* update token value */
           "tokenType": "TXN_TOKEN",
-          "amount": 5 /* update amount */
+          "amount": 1 /* update amount */
         },
         "handler": {
           "notifyMerchant": function (eventName, data) {
@@ -199,7 +199,7 @@ export default function Home({project}) {
 
 
        
-        <span className='font-bold'>Subtotal: ₹5</span>
+        <span className='font-bold'>Subtotal: ₹1</span>
 
 
       </div>
@@ -209,7 +209,7 @@ export default function Home({project}) {
         </div>
         ) : (
       <div className='mx-4'>
-        <Link href={'/'}><button disabled={disabled} onClick={initiatePayment} className=" disabled:bg-indigo-300 flex mr-2 text-white bg-indigo-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded">Pay ₹{5}</button></Link>
+        <Link href={'/'}><button disabled={disabled} onClick={initiatePayment} className=" disabled:bg-indigo-300 flex mr-2 text-white bg-indigo-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded">Pay ₹{1}</button></Link>
       </div>)}
 
 

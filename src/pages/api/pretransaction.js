@@ -26,7 +26,7 @@ const handler = async (req, res) => {
             email: req.body.email,
             orderId: req.body.oid,
             phone: req.body.phone,
-            amount: 5,
+            amount: 1,
         })
         await order.save()
 
@@ -43,7 +43,7 @@ const handler = async (req, res) => {
             "orderId": req.body.oid,
             "callbackUrl": `${process.env.NEXT_PUBLIC_HOST}/api/posttransaction`,
             "txnAmount": {
-                "value": 5,
+                "value": 1,
                 "currency": "INR",
             },
             "userInfo": {
